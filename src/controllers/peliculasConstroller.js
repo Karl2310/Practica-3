@@ -25,7 +25,7 @@ const agregarPelicula = async (req, res) => {
   }
 
   const nuevaPelicula = await peliculasModel.crear(titulo, director, año);
-
+  
   res.status(201).json(nuevaPelicula);
 };
 
